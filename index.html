@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .nav-main {
+            color: white;
+            display: flex;
+            background-color: #0f1111;
+            height: 60px;
+            width: 100%;
+            align-items: center;
+
+        }
+
+        .logo {
+            height: 50px;
+            width: 113px;
+        }
+
+        .nav-logo {
+            background-image: url(Images/amazon_logo.png);
+            height: 50px;
+            width: 113px;
+            background-size: cover;
+        }
+
+        .nav-location1 {}
+
+        .nav-location2 {
+            display: flex;
+
+        }
+
+        .border {
+            border: 2px solid transparent;
+        }
+
+        .border:hover {
+            border: 2px solid white;
+        }
+
+        .lc1 {
+            font-size: 0.8rem;
+            margin-left: 10px;
+            color: #cccccc;
+        }
+
+        .lc2 {
+            margin-left: 5px;
+            font-size: 1rem;
+
+        }
+
+        .nav-box3 {
+            display: flex;
+            height: 38px;
+            width: 600px;
+        }
+
+        .search-icon {
+            width: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            background-color: rgb(235, 185, 79);
+
+            color: #0f1111;
+
+        }
+
+        .select {
+            border: none;
+            background-color: #f3f3f3;
+        }
+
+        .input {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-main">
+            <div class="logo border">
+                <div class="nav-logo"> </div>
+            </div>
+            <div class="nav-location1 border">
+                <p class="lc1">Deliver to </p>
+                <div class="nav-location2">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="lc2"> India </p>
+                </div>
+            </div>
+            <div class="nav-box3">
+                <select class="select">
+                    <option>All</option>
+                </select>
+                <input class="input" type="text" placeholder="Search Amazon">
+
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
